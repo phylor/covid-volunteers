@@ -30,4 +30,7 @@ Notes:
 <%- end -%>
 
 - Your friends at helpwithcovid.com
-For any feedback or questions regarding helpwithcovid.com, let us know at https://discord.gg/875AhXS.
+For any feedback or questions regarding helpwithcovid.com,
+<% if ENV["DISCORD_URL"] %>
+  let us know at <%= ENV["DISCORD_URL"] %>.
+<% end %>
