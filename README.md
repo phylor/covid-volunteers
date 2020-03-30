@@ -46,6 +46,8 @@ The following environment variables can be set:
 | `ADMINS`              | Email addresses separated by a `,` | Gives admin permissions to the listed accounts           |
 | `EXCEPTION_NOTIFIERS` | Email addresses separated by a `,` | Sends technical exceptions to the listed email addresses |
 | `EMAIL_ADDRESS`       | Single email address               | Used to contact your team                                |
+| `EMAIL_HOST`          | Domain name                        | App host name                                            |
+| `EMAIL_PROTOCOL`      | http or https                      | App protocol                                             | 
 | `DISCORD_URL`         | URL to discord conversation        | If set, the link will appear in the navigation           |
 
 ## Launch app
