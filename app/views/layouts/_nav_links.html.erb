@@ -19,8 +19,10 @@
   Deals
 <% end %>
 
-<%= link_to "https://discord.gg/875AhXS", target: "_blank", class: "#{discord_nav_link_class(variant)}" do %>
-  Discord
+<% if ENV["DISCORD_URL"] %>
+  <%= link_to ENV["DISCORD_URL"], target: "_blank", class: "#{discord_nav_link_class(variant)}" do %>
+    Discord
+  <% end %>
 <% end %>
 
 <% if current_user %>
